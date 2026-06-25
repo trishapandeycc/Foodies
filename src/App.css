@@ -1,17 +1,8 @@
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif !important;
-  user-select: none;
-}*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif !important;
-  -webkit-user-select: none; /* Add this line */
   user-select: none;
 }
 
