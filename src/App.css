@@ -231,6 +231,7 @@ nav {
    .home-bannerImage-container {
     max-width: 600px;
   }
+
 }
 
 @media (max-width: 800px) {
@@ -316,6 +317,44 @@ nav {
    .App {
     max-width: 95vw;
   }
+  /* --- Clean Responsive Footer Controls --- */
+  .footer-wrapper {
+    flex-direction: column !important; /* Changes horizontal layout to a vertical stack */
+    align-items: center !important;    /* Centers everything horizontally */
+    text-align: center !important;     /* Centers all the text lines */
+    padding: 3rem 1.5rem !important;
+    gap: 2.5rem !important;            /* Pushes the logo section and link columns apart */
+  }
+
+  .footer-section-one {
+    align-items: center !important;    /* Centers logo and social icons group */
+    width: 100%;
+  }
+
+  .footer-icons {
+    margin-top: 1rem !important;
+    justify-content: center !important;/* Puts social icons side-by-side in the center */
+    width: 100%;
+  }
+
+  .footer-section-two {
+    flex-direction: column !important; /* Stacks the three link columns vertically */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;              /* Spaces the link blocks out so they don't overlap */
+    width: 100%;
+  }
+
+  .footer-section-columns {
+    min-width: unset !important;       /* Removes desktop width limits */
+    width: 100%;
+    align-items: center !important;    /* Centers text links inside their column */
+  }
+
+  .footer-section-columns span {
+    text-align: center !important;
+    margin: 0.4rem 0 !important;
+  }
 }
 @media (max-width: 600px) {
   .home-bannerImage-container,
@@ -376,26 +415,7 @@ nav {
     text-align: center;
   }
 }
-.footer-wrapper {
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
-  }
 
-  .footer-section-two {
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    align-items: center;
-  }
-
-  .footer-section-columns {
-    min-width: auto;
-  }
-
-  .footer-icons {
-    justify-content: center;
-  }
 /*================= TESTIMONIAL =================*/
 
 .testimonial-section-bottom {
@@ -485,108 +505,64 @@ text-align: center;
   margin-top: 10rem;
   padding: 4rem 3rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   background-color: white;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
+.footer-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .footer-logo-container img {
   width: 120px;
+  height: auto;
 }
-
 
 .footer-icons {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
 }
-
 
 .footer-icons svg {
   font-size: 1.7rem;
-  margin-right: 1rem;
   color: #333;
   cursor: pointer;
+  transition: color 0.2s ease;
 }
-
 
 .footer-icons svg:hover {
   color: #fe9e0d;
 }
 
-
 .footer-section-two {
-  flex: 1;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  gap: 3rem;
+  gap: 4rem;
 }
-
 
 .footer-section-columns {
   display: flex;
   flex-direction: column;
-  min-width: 170px;
+  min-width: 140px;
 }
-
 
 .footer-section-columns span {
   margin: 0.5rem 0;
   font-weight: 600;
   color: #333;
   cursor: pointer;
+  transition: color 0.2s ease;
+  text-align: left;
 }
-
 
 .footer-section-columns span:hover {
   color: #fe9e0d;
-}
-
-.footer-description{
-  color:#666;
-  width:250px;
-  margin-top:20px;
-}
-
-
-.footer-section-columns h3{
-  color:#fe9e0d;
-  margin-bottom:15px;
-}
-
-.footer-section-two {
-  display: flex;
-  gap: 4rem;
-}
-
-
-.footer-section-columns h3 {
-  color: #fe9e0d;
-  font-size: 20px;
-  margin-bottom: 1rem;
-}
-
-
-.footer-section-columns span {
-  color: white;
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-
-.footer-section-columns span:hover {
-  color: #fe9e0d;
-}
-
-.footer-bottom {
-  width: 100%;
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #555;
-}
-
-
-.footer-bottom p {
-  color: #555;
-  font-size: 14px;
 }
