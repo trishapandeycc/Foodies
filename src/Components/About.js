@@ -5,7 +5,7 @@ import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div id="about" className="about-section-container">
+    <div className="about-section-container">
       <div className="about-background-image-container">
         <img src={AboutBackground} alt="" />
       </div>
@@ -18,12 +18,10 @@ const About = () => {
           Food Is An Important Part Of A Balanced Diet
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          We bring wholesome, chef-crafted meals straight to your doorstep, making healthy eating both effortless and delicious. Every dish is prepared using fresh, locally sourced ingredients balanced perfectly for your lifestyle.
         </p>
         <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+          Whether you are fueling a busy workday or looking for a nutritious family dinner, our curated menus offer the perfect blend of taste and clean nutrition without any of the hassle.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
