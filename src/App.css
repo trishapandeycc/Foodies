@@ -376,6 +376,26 @@ nav {
     text-align: center;
   }
 }
+.footer-wrapper {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footer-section-two {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .footer-section-columns {
+    min-width: auto;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
 /*================= TESTIMONIAL =================*/
 
 .testimonial-section-bottom {
@@ -459,4 +479,114 @@ nav {
 .work-section-top h1{
 max-width: none !important;
 text-align: center;
+}
+
+.footer-wrapper {
+  margin-top: 10rem;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+.footer-logo-container img {
+  width: 120px;
+}
+
+
+.footer-icons {
+  margin-top: 2rem;
+}
+
+
+.footer-icons svg {
+  font-size: 1.7rem;
+  margin-right: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.footer-icons svg:hover {
+  color: #fe9e0d;
+}
+
+
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 170px;
+}
+
+
+.footer-section-columns span {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.footer-section-columns span:hover {
+  color: #fe9e0d;
+}
+
+.footer-description{
+  color:#666;
+  width:250px;
+  margin-top:20px;
+}
+
+
+.footer-section-columns h3{
+  color:#fe9e0d;
+  margin-bottom:15px;
+}
+
+.footer-section-two {
+  display: flex;
+  gap: 4rem;
+}
+
+
+.footer-section-columns h3 {
+  color: #fe9e0d;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+
+.footer-section-columns span {
+  color: white;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+
+.footer-section-columns span:hover {
+  color: #fe9e0d;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #555;
+}
+
+
+.footer-bottom p {
+  color: #555;
+  font-size: 14px;
 }
