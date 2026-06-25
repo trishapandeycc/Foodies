@@ -231,6 +231,7 @@ nav {
    .home-bannerImage-container {
     max-width: 600px;
   }
+
 }
 
 @media (max-width: 800px) {
@@ -316,6 +317,44 @@ nav {
    .App {
     max-width: 95vw;
   }
+  /* --- Clean Responsive Footer Controls --- */
+  .footer-wrapper {
+    flex-direction: column !important; /* Changes horizontal layout to a vertical stack */
+    align-items: center !important;    /* Centers everything horizontally */
+    text-align: center !important;     /* Centers all the text lines */
+    padding: 3rem 1.5rem !important;
+    gap: 2.5rem !important;            /* Pushes the logo section and link columns apart */
+  }
+
+  .footer-section-one {
+    align-items: center !important;    /* Centers logo and social icons group */
+    width: 100%;
+  }
+
+  .footer-icons {
+    margin-top: 1rem !important;
+    justify-content: center !important;/* Puts social icons side-by-side in the center */
+    width: 100%;
+  }
+
+  .footer-section-two {
+    flex-direction: column !important; /* Stacks the three link columns vertically */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;              /* Spaces the link blocks out so they don't overlap */
+    width: 100%;
+  }
+
+  .footer-section-columns {
+    min-width: unset !important;       /* Removes desktop width limits */
+    width: 100%;
+    align-items: center !important;    /* Centers text links inside their column */
+  }
+
+  .footer-section-columns span {
+    text-align: center !important;
+    margin: 0.4rem 0 !important;
+  }
 }
 @media (max-width: 600px) {
   .home-bannerImage-container,
@@ -376,6 +415,7 @@ nav {
     text-align: center;
   }
 }
+
 /*================= TESTIMONIAL =================*/
 
 .testimonial-section-bottom {
@@ -459,4 +499,70 @@ nav {
 .work-section-top h1{
 max-width: none !important;
 text-align: center;
+}
+
+.footer-wrapper {
+  margin-top: 10rem;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.footer-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo-container img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icons svg {
+  font-size: 1.7rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-icons svg:hover {
+  color: #fe9e0d;
+}
+
+.footer-section-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+
+.footer-section-columns span {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  text-align: left;
+}
+
+.footer-section-columns span:hover {
+  color: #fe9e0d;
 }
