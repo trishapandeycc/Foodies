@@ -341,3 +341,7 @@ nav {
   align-items: center;
   font-weight: 600;
 }
+.work-section-top h1{
+max-width: none !important;
+text-align: center;
+}

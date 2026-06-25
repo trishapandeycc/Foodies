@@ -1,24 +1,23 @@
 import React from "react";
-import "./testimonial.css";
-import ProfilePic from "../../Assets/john-doe-image.png";
+import ProfilePic from "../Assets/john-doe-image.png";
 import { AiFillStar } from "react-icons/ai";
 
 const Testimonial = () => {
   return (
-    <div className="testimonial-section-wrapper">
-      <div className="testimonial-section-top">
+    <div className="work-section-wrapper">
+      <div className="work-section-top">
         <p className="primary-subheading">Testimonial</p>
         <h1 className="primary-heading">What They Are Saying</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+           Good food is all about taste, quality, and the joy it brings to people. 
+  From fresh ingredients to delicious flavors, every dish tells a story. 
+  Whether it’s street food or fine dining, food lovers always enjoy exploring new recipes and cuisines that satisfy both heart and hunger.
         </p>
       </div>
       <div className="testimonial-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+           “Best food experience ever! Quick delivery and incredible flavors that never disappoint.”
         </p>
         <div className="testimonials-stars-container">
           <AiFillStar />

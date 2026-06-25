@@ -1,8 +1,7 @@
 import React from "react";
-import "./Work.css";
-import PickMeals from "../../Assets/pick-meals-image.png";
-import ChooseMeals from "../../Assets/choose-image.png";
-import DeliveryMeals from "../../Assets/delivery-image.png";
+import PickMeals from "../Assets/pick-meals-image.png";
+import ChooseMeals from "../Assets/choose-image.png";
+import DeliveryMeals from "../Assets/delivery-image.png";
 
 const Work = () => {
   const workInfoData = [
@@ -28,8 +27,10 @@ const Work = () => {
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          It’s simple and easy to get started.<br />
+            1. First, browse through a variety of delicious food options. <br />
+            2. Next, choose your favorite dish and place your order in just a few clicks. <br />
+            3. Finally, sit back and relax while your food is freshly prepared and delivered right to your doorstep.
         </p>
       </div>
       <div className="work-section-bottom">
